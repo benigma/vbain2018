@@ -1,0 +1,24 @@
+// Colours
+
+$dark-grey: #5F5F59;
+$light-grey: #7F7F77;
+$highlight: #74706A;
+$background: #D6D6D6;
+
+$white: #FFF;
+$black: #000;
+
+//Fonts
+@mixin primary-font {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+@mixin primary-font-heading {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+@mixin secondary-font {
+	font-family: "freight-display-pro", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}

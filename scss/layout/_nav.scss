@@ -1,0 +1,159 @@
+header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+header .contact-banner .swatches img {
+	margin-left: 32px;
+	height: 29px;
+	width: 29px;
+}
+header .contact-banner .swatches .swatch-count {
+	background: rgba(0,0,0,0.25);
+	display: block;
+	color: $white;
+	text-align: right;
+	width: 50px;
+	height: 50px;
+	margin: 0 0 0 24px;
+	text-align: center;
+	line-height: 50px;
+}
+header .contact-banner .swatches .swatch-count a {
+	color: $white;
+	text-decoration: none;
+}
+header nav {
+	background: none;
+	border: none;
+	height: 100px;
+}
+.logo {
+	flex: 1;
+	text-align: right;
+}
+.logo a {
+	fill: $white;
+	flex: 1;
+	text-align: right;
+}
+.logo img {
+	width: 300px;
+	height: 43px;
+	fill: $light-grey;
+}
+nav {
+	width: 100%;
+	padding: 16px 32px;
+	margin: 0;
+	height: auto;
+	background: $white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	box-sizing: border-box;
+	justify-content: stretch;
+}
+nav ul {
+	width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+nav ul li {
+	flex: 1;
+	margin-right: 48px;
+	text-align: center;
+	color: $light-grey;
+	padding: 32px 0px;
+	text-transform: uppercase;
+	display: block;
+}
+nav ul li a {
+	color: $black;
+	text-decoration: none;
+	transition: color .3s ease-in;
+	font-size: 18px;
+	font-weight: 400;
+}
+nav ul li a:hover {
+	color: $dark-grey;
+}
+nav ul li ul.sub-menu {
+	display: none;
+}
+nav ul li:hover > ul.sub-menu::after, nav ul li:hover > ul.sub-menu::before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+nav ul li:hover > ul.sub-menu::before {
+	content: '';
+	border-color: rgba(127, 127, 119, 0);
+	border-bottom-color: #7F7F77;
+	border-width: 11px;
+	margin-left: -11px;
+}
+nav ul li:hover > ul.sub-menu {
+	position: absolute;
+	display: flex;
+	max-width: 200px;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	border: 1px solid $light-grey;
+	background: $white;
+	border-radius: 2px;
+	padding: 8px 16px;
+	margin: 16px 0 0 -48px;
+	z-index: 2000;
+}
+nav ul li:hover > ul.sub-menu::after {
+	border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #FFF;
+    border-width: 10px;
+    margin-left: -10px;
+}
+nav ul li ul.sub-menu li {
+	line-height: 1.5;
+	margin-right: 0px;
+	padding: 8px 0px;
+}
+nav ul li ul.sub-menu li a {
+	font-size: 16px;
+	font-weight: 300;
+	color: $dark-grey;
+	transition: color .3s ease-in;
+}
+nav ul li ul.sub-menu li a:hover {
+	color: $black;
+}
+nav ul li a img {
+	margin: 8px 0 0 0;
+}
+nav .swatches a {
+	color: $black;
+	text-decoration: none;
+	transition: color .3s ease-in;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+nav .swatches a:hover {
+	color: $dark-grey;
+}
+nav .swatches a span.swatch-count {
+	padding: 6px 2px 5px;
+	background: $light-grey;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	color: $white;
+}
