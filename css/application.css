@@ -494,7 +494,7 @@ nav .swatches a span.swatch-count {
 .collections .box .information h3 {
   font-weight: 400;
   font-size: 30px;
-  line-height: 24px;
+  line-height: 32px;
   text-transform: uppercase; }
 
 .collections .box .information p {
@@ -983,7 +983,7 @@ nav .swatches a span.swatch-count {
   visibility: visible;
   animation: contactUp 0.5s, fadeout 0.5s 2.5s;
   bottom: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1000; }
 
 .contact-form-area p.tel a {
