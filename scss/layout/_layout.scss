@@ -908,14 +908,11 @@
 .owl-theme .owl-controls .owl-nav [class*=owl-] {
 	color:$white;
 	font-size:14px;
-	margin:5px;
-	padding:4px 7px;
-	background: $background;
+	margin:0px;
+	padding: 8px;
+	background: $light-grey;
 	display:inline-block;
 	cursor:pointer;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px
 }
 .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
 	background:#869791;

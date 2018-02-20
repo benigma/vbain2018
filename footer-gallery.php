@@ -67,7 +67,9 @@
 	}
 		$('.owl-carousel').owlCarousel({stagePadding: 0,
 		    margin:0,
-		    nav:false,
+		    nav:true,
+			navText: ["<img src='<?php echo get_template_directory_uri(); ?>/img/back-arrow.png'>","<img src='<?php echo get_template_directory_uri(); ?>/img/next-arrow.png'>"],
+			dots: false,
 		    autoplay: true,
 		    onResize: true,
 		    autoHeight:false,
@@ -85,14 +87,14 @@
 			    },
 			    768:{
 			        items:1,
-			        nav:false,
+			        nav:true,
 			        singleItem: true,
 			        loop:true,
   			        stagePadding: 0
 			    },
 			    1280:{
 			        items:1,
-			        nav:false,
+			        nav:true,
 			        singleItem: true,
 			        loop:true,
 			          stagePadding: 0
@@ -118,6 +120,19 @@
 	});
 		
 </script>
+
+<style>
+	.owl-controls .owl-nav {
+	display: flex;
+	width: 100%;
+	height: 50px;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 275px;
+	z-index: 5000;
+}
+</style>
 
 <?php wp_footer(); ?>
 

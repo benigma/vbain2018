@@ -1124,14 +1124,11 @@ nav .swatches a span.swatch-count {
 .owl-theme .owl-controls .owl-nav [class*=owl-] {
   color: #FFF;
   font-size: 14px;
-  margin: 5px;
-  padding: 4px 7px;
-  background: #D6D6D6;
+  margin: 0px;
+  padding: 8px;
+  background: #7F7F77;
   display: inline-block;
-  cursor: pointer;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; }
+  cursor: pointer; }
 
 .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
   background: #869791;
